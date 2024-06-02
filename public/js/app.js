@@ -99,7 +99,7 @@ var MessageForm = React.createClass({
 	},
 
 	handleSubmit: function handleSubmit(e) {
-		e.preventDefault();// 기본 폼 제출 동작 방지
+		e.preventDefault();
 		var messageText = this.state.text.trim(); // 입력된 메시지 텍스트 가져오기
 		if (!messageText) {
 			return; // 메시지가 비어 있는 경우 전송하지 않음(추가)
@@ -278,7 +278,15 @@ var ChatApp = React.createClass({
 					'button',
 					{ onClick: this.handleClearMessages, className: 'clear-button' },
 					'채팅 전체 삭제'// '채팅 전체 삭제' 버튼 생성
-				) // 채팅 전체 삭제 버튼 생성
+				), // 채팅 전체 삭제 버튼 생성
+        React.createElement(
+          'img',
+          {
+              src: "./images/INU.png", // 이미지 파일의 상대 경로
+              alt: '이미지',
+              className: 'image' // 필요한 경우, CSS 클래스 추가
+          }
+      )
 			)
 		);
 	}

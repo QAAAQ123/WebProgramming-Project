@@ -184,7 +184,12 @@ var ChatApp = React.createClass({
 					onMessageSubmit={this.handleMessageSubmit}
 					user={this.state.user}
 				/>
-			{/* </div> */}
+				{/* 이미지 추가 */}
+				<img
+					src="./images/INU.png" // 이미지 파일의 상대 경로
+					alt="이미지"
+					className="image" // 필요한 경우, CSS 클래스 추가
+				/>
 			</div>
 			</div>
 		);
