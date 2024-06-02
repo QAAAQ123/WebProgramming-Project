@@ -1,0 +1,97 @@
+body {
+	box-sizing: border-box;
+	position: relative;
+	width: 1890px;
+	height: 900px;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+}
+
+.users {
+	box-sizing: border-box;
+	position: absolute;
+	top: 20%; /* 변경: 세로 중앙에 위치하도록 설정 */
+	transform: translateY(-50%); /* 변경: 세로 중앙에 정렬 */
+}
+
+
+
+.messages {
+	box-sizing: border-box;
+	position: relative;
+	width: 1300px;
+	height: 690px;
+	left: 580px;
+	top: 0px;
+	background: #DDFFDD;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	overflow-y: auto; /* 스크롤 가능하도록 설정(기능추가4-완) */
+}
+
+.change_name_form {
+	box-sizing: border-box;
+	padding: 1em;
+}
+
+.center {
+	box-sizing: border-box;
+	width: 600px;
+	height: 700px;
+}
+
+.textinput {
+	box-sizing: border-box;
+	position: relative;
+	width: 1250px;
+	height: 40px;
+	left: 580px;
+	top: 0px;
+}
+
+.clear-button {
+	box-sizing: border-box;
+	position: absolute;
+	top: 8px;
+	left: 1730px;
+	background-color: #d488ed;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 16px;
+}
+
+/* 채팅 형태 꾸미기(기능추가7-완료) */
+.message {
+	box-sizing: border-box;
+	border: 3px solid #000000;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: #c6c5c5;
+	margin-bottom: 20px; /* 채팅 메시지 사이의 간격을 늘립니다 */
+	max-width: 30%; /* 채팅 상자의 전체 크기를 줄입니다 */
+}
+
+.message .user {
+	font-weight: bold;
+	display: block; /* 사용자 이름을 개별 줄에 표시합니다 */
+}
+
+.message .content {
+	margin-top: 5px;
+}
+
+.message .timestamp {
+	font-size: 0.8em;
+	color: #575757;
+	display: block; /* 타임스탬프를 개별 줄에 표시합니다 */
+	margin-top: 5px; /* 내용과 타임스탬프 사이에 일정한 간격을 추가합니다 */
+}
+
+/* 기능추가8-완료 - 사용자의 메시지를 오른쪽에 배치 */
+.own-message {
+	background-color: #a7ffeb;
+	align-self: flex-end;
+	margin-left: auto;
+	margin-right: 10px;
+}
